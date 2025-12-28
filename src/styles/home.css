@@ -1,0 +1,102 @@
+/* GOLDEN HOME THEME — DOES NOT TOUCH BODY */
+
+.home-theme {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+    circle at top,
+    #fff3d6,
+    #f7e1a1,
+    #e8c873
+  );
+}
+
+.home-card {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 236, 190, 0.85)
+  );
+
+  backdrop-filter: blur(16px);
+  border-radius: 26px;
+  padding: 60px;
+  max-width: 820px;
+  width: 90%;
+  text-align: center;
+
+  box-shadow:
+    0 25px 60px rgba(163, 116, 22, 0.35),
+    inset 0 0 30px rgba(255, 255, 255, 0.4);
+
+  animation: floatIn 1.2s ease;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.home-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #5a3b00;
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #7a5a1e;
+  margin-bottom: 22px;
+}
+
+.home-desc {
+  font-size: 1.15rem;
+  color: #4a3508;
+  margin-bottom: 40px;
+}
+
+.home-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.gold-btn {
+  padding: 14px 36px;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #d4a13a, #b8860b);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(184, 134, 11, 0.45);
+
+  transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(184, 134, 11, 0.6);
+}
+
+.gold-btn.outline {
+  background: transparent;
+  border: 2px solid #b8860b;
+  color: #5a3b00;
+}
+
+.gold-btn.outline:hover {
+  background: rgba(184, 134, 11, 0.12);
+}
